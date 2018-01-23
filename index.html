@@ -5,16 +5,17 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <style>
-  html, button, input, select, textarea, .pure-g [class *= "pure-u"]{
+  html{
     font-family: "Roboto", sans-serif;
+    line-height: 1.2;
   }
   body{
     color: #333;
     background-color: #EEE;
   }
-  a:link:not(.pure-button), a:link:hover:not(.pure-button), a:visited:not(.pure-button){
+  a:link, a:link:hover, a:visited{
     color: #0CB0FF;
   }
   .page{
@@ -77,36 +78,41 @@
     min-width: 270px;
     display: inline-block;
   }
+  .agenda{
+    overflow-x: auto;
+    vertical-align: top;
+  }
   .names {
     padding: 0;
   }
   .agenda table, .agenda tr{
     width: 100%;
-  }
-  .agenda .hspan2{
-    height: 67px;
-  }
-  .agenda .hspan3{
-    height: 90px;
-  }
-  .agenda .hspan4{
-    height: 120px;
+    border-spacing: 0px;
   }
   .agenda td{
     height: 20px;
     padding: 5px 0.5em;
     vertical-align: top;
+    white-space: nowrap;
   }
-  .agenda .break{
+  .hspan2{
+    height: 60px;
+  }
+  .hspan3{
+    height: 90px;
+  }
+  .hspan4{
+    height: 120px;
+  }
+  .break{
     background-color: #cfe2f3;
   }
-  .agenda .plenary{
+  .plenary{
     background-color: #fce5cd;
   }
-  .agenda .work{
+  .work{
     background-color: #d9ead3;
   }
-
   </style>
 </head>
 
@@ -140,7 +146,7 @@
 
       <a name="agenda"><h2>Agenda (preliminary)</h2></a>
 
-      <p>The agenda is color coded by session type: yellow indicates plenary sessions, green indicates small group work sessions, and blue indicates food/breaks.
+      <p>The agenda is color coded by session type: <span class="plenary">plenary sessions</span>, <span class="work">small group work sessions</span>, and <span class="break">food/breaks</span>.
       </p>
 
       <div class="agenda">
@@ -153,12 +159,12 @@
         <tr class="break"><td>10:30</td><td>Coffee Break                       </td></tr>
         <tr class="plenary"><td>11:00</td><td>Astrophysical observations         </td></tr>
         <tr class="plenary"><td>11:30</td><td>LSST: new opportunities            </td></tr>
-        <tr class="break"><td>12:00</td><td>Lunch                              </td></tr>
+        <tr class="break hspan2"><td>12:00</td><td>Lunch                              </td></tr>
         <tr class="plenary"><td>13:30</td><td>Overview of diagram/whitepaper                </td></tr>
         <tr class="plenary"><td>14:00</td><td>Open discussion of workshop goals  </td></tr>
         <tr class="break"><td>15:00</td><td>Coffee                             </td></tr>
         <tr class="plenary"><td>15:15</td><td>Technical overview (GitHub, Yaml)  </td></tr>
-        <tr class="work hspan2"><td>15:30</td><td>Split into working groups          </td></tr>
+        <tr class="work"><td>15:30</td><td>Split into working groups          </td></tr>
         <tr class="plenary"><td>17:30</td><td>Tag up: groups discuss plans       </td></tr>
         <tr class="break"><td>18:00</td><td>Dinner                             </td></tr>
         </table>
@@ -173,9 +179,9 @@
         <tr class="break"><td>10:30</td><td>Coffee                          </td></tr>
         <tr class="work hspan3"><td>11:00</td><td>Working group hack              </td></tr>
         <tr class="break"><td>12:30</td><td>Lunch (in-room/working?)        </td></tr>
-        <tr class="work hspan4"><td>13:30</td><td>Working group hack              </td></tr>
+        <tr class="work hspan2"><td>13:30</td><td>Working group hack              </td></tr>
         <tr class="break"><td>15:00</td><td>Coffee                          </td></tr>
-        <tr class="work hspan4"><td>15:15</td><td>Working group hack              </td></tr>
+        <tr class="work hspan2"><td>15:15</td><td>Working group hack              </td></tr>
         <tr class="plenary"><td>17:30</td><td>Tag up: groups discuss progress </td></tr>
         <tr class="break"><td>18:00</td><td>Dinner                          </td></tr>
         </table>
@@ -187,7 +193,7 @@
         <tr class="break"><td>08:30</td><td>Breakfast                     </td></tr>
         <tr class="work hspan3"><td>09:00</td><td>Prepare final presentations   </td></tr>
         <tr class="break"><td>10:30</td><td>Coffee                        </td></tr>
-        <tr class="plenary"><td>11:00</td><td>Final presentations           </td></tr>
+        <tr class="plenary hspan2"><td>11:00</td><td>Final presentations           </td></tr>
         <tr class="plenary"><td>12:00</td><td>What's next?                  </td></tr>
         <tr class="plenary"><td>12:30</td><td>Done.                         </td></tr>
         </table>
