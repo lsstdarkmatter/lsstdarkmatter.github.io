@@ -5,16 +5,17 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <style>
-  html, button, input, select, textarea, .pure-g [class *= "pure-u"]{
+  html{
     font-family: "Roboto", sans-serif;
+    line-height: 1.2;
   }
   body{
     color: #333;
     background-color: #EEE;
   }
-  a:link:not(.pure-button), a:link:hover:not(.pure-button), a:visited:not(.pure-button){
+  a:link, a:link:hover, a:visited{
     color: #0CB0FF;
   }
   .page{
@@ -72,6 +73,47 @@
     font-size: 80%;
     margin-top: 6em;
   }
+  .agenda, .names > li{
+    width: 33%;
+    min-width: 270px;
+    display: inline-block;
+  }
+  .agenda{
+    overflow-x: auto;
+    vertical-align: top;
+  }
+  .names {
+    padding: 0;
+  }
+  .agenda table, .agenda tr{
+    width: 100%;
+    border-spacing: 0px;
+  }
+  .agenda td{
+    height: 22px;
+    line-height: 22px;
+    padding: 5px 0.5em;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  .hspan2{
+    height: 64px;
+  }
+  .hspan3{
+    height: 96px;
+  }
+  .hspan4{
+    height: 128px;
+  }
+  .break{
+    background-color: #cfe2f3;
+  }
+  .plenary{
+    background-color: #fce5cd;
+  }
+  .work{
+    background-color: #d9ead3;
+  }
   </style>
 </head>
 
@@ -88,37 +130,79 @@
 
   <div class="page main-content">
     <nav class="menu">
-        <a href="#program">Program</a> | <a href="#whitepaper">White Paper</a> | <a href="#participants">Participants</a> | <a href="#lodging">Lodging</a> | <a href="#transportation">Transportation</a> | <a href="#poi">Local Info</a>
+        <a href="#goal">Goal</a> | <a href="#agenda">Agenda</a> | <a href="#participants">Participants</a> | <a href="#lodging">Lodging</a> | <a href="#transportation">Transportation</a> | <a href="#poi">Local Info</a>
     </nav>
 
     <div class="content">
-      <a name="program"><h2>Program</h2></a>
-      <p>How can we utilize LSST to help us understand the microphysics of dark matter, to identify the fundamental constituents of dark matter (e.g., new fundamental particles, compact objects, etc.), and to characterize the properties of these constituents (e.g, mass, temperature, self-interaction rate, etc.)? LSST offers a unique avenue to attack the dark matter problem through "astrophysical probes". Below is a brief description of some that we have started to consider:</p>
-      <ul>
-        <li>Local Group Dwarf Galaxies: Local Group dwarf galaxies provide the most direct tracer of the low-mass end of the matter power spectrum and are sensitive to deviations from LCDM on the smallest scales.</li>
-        <li>Stellar Streams: Perturbations in stellar streams can be used to trace the dark matter subhalo population below the threshold for star formation.</li>
-        <li>Strong Lensing Substructures: Dark matter substructure can be traced independently of baryons through perturbations in the strong lensing of galaxies at cosmological distances.</li>
-        <li>Galaxy Cluster Density Profiles: Dark matter self-interactions would alter the density profiles in galaxy clusters and could lead to observable offsets between galaxies and dark matter in colliding clusters.</li>
-        <li>Microlensing: Searches for massive compact halo objects (MACHOs) using the microlensing of stars.</li>
-        <li>Nanolensing: Can we use gravitational lensing to detect dark matter subhaloes directly?</li>
-        <li>Probing outer gravitational potential of the Milky Way with RR Lyrae and Carbon-rich stars</li>
-        <li>Axion Cooling of Stars: Axions (and other axion-like particles) would provide an alternative thermal transport mechanism altering stellar physics (e.g., white dwarf lifetimes)</li>
-        <li>High-redshift universe through observations of QSOs and the Lyman alpha forest</li>
-        <li>Many more...?</li>
-      </ul>
-
-      <a name="whitepaper"><h2>White Paper</h2></a>
-      <p>One of the primary goals of this workshop is jump-start work on an LSST dark matter white paper. In this white paper, we hope to provide a comprehensive summary of the various techniques that can be used to test the fundamental nature of dark matter with LSST. We have begun this project by assembling graphical representations of the complex LSST dark matter parameter space.</p>
+      <a name="goal"><h2>Goal</h2></a>
+      <p>How can we utilize LSST to help us understand the microphysics of dark matter, to identify the fundamental constituents of dark matter (e.g., new fundamental particles, compact objects, etc.), and to characterize the properties of these constituents (e.g, mass, temperature, self-interaction rate, etc.)? LSST offers a unique avenue to attack the dark matter problem through "astrophysical probes".
+      Hence, the primary goal of this workshop is jump-start work on an LSST dark matter white paper. In this white paper, we hope to provide a comprehensive summary of the various techniques that can be used to test the fundamental nature of dark matter with LSST. We have begun this project by assembling graphical representations of the complex LSST dark matter parameter space. See:</p>
       <ul>
         <li><a href="https://lsstdarkmatter.github.io/dark-matter-graph/network.html">Network Graph Representation </a></li>
         <li><a href="https://lsstdarkmatter.github.io/dark-matter-graph/matrix.html">Adjacency Matrix Representation</a></li>
       </ul>
-      <p>We strongly encourage the addition of new components through this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkUCE7o8cqQQV9PFki484sSqRzelTDEk1SXtwb7I2d4gxxTw/viewform">submission form</a>.
+      <p>We strongly encourage the addition of new components through this
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkUCE7o8cqQQV9PFki484sSqRzelTDEk1SXtwb7I2d4gxxTw/viewform">submission form</a>.
       </p>
+
+      <a name="agenda"><h2>Agenda (preliminary)</h2></a>
+
+      <p>The agenda is color coded by session type: <span class="plenary">plenary sessions</span>, <span class="work">small group work sessions</span>, and <span class="break">food/breaks</span>.
+      </p>
+
+      <div class="agenda">
+        <h4>Monday (2018-03-05)</h4>
+        <table>
+        <tr class="break"><td>08:30</td><td>Breakfast                          </td></tr>
+        <tr class="plenary"><td>09:00</td><td>Introduction/Goals                 </td></tr>
+        <tr class="plenary"><td>09:30</td><td>Dark matter theory/models          </td></tr>
+        <tr class="plenary"><td>10:00</td><td>Dark matter simulations            </td></tr>
+        <tr class="break"><td>10:30</td><td>Coffee Break                       </td></tr>
+        <tr class="plenary"><td>11:00</td><td>Astrophysical observations         </td></tr>
+        <tr class="plenary"><td>11:30</td><td>LSST: new opportunities            </td></tr>
+        <tr class="break hspan2"><td>12:00</td><td>Lunch                              </td></tr>
+        <tr class="plenary"><td>13:30</td><td>Overview of diagram/whitepaper                </td></tr>
+        <tr class="plenary"><td>14:00</td><td>Open discussion of workshop goals  </td></tr>
+        <tr class="break"><td>15:00</td><td>Coffee                             </td></tr>
+        <tr class="plenary"><td>15:15</td><td>Technical overview (GitHub, Yaml)  </td></tr>
+        <tr class="work"><td>15:30</td><td>Split into working groups          </td></tr>
+        <tr class="plenary"><td>17:30</td><td>Tag up: groups discuss plans       </td></tr>
+        <tr class="break"><td>18:00</td><td>Dinner                             </td></tr>
+        </table>
+      </div>
+
+      <div class="agenda">
+        <h4>Tuesday (2018-03-06)</h4>
+        <table>
+        <tr class="break"><td>08:30</td><td>Breakfast                       </td></tr>
+        <tr class="plenary"><td>09:00</td><td>Morning Tag Up                  </td></tr>
+        <tr class="work hspan2"><td>09:15</td><td>Working group hack </td></tr>
+        <tr class="break"><td>10:30</td><td>Coffee                          </td></tr>
+        <tr class="work hspan3"><td>11:00</td><td>Working group hack              </td></tr>
+        <tr class="break"><td>12:30</td><td>Lunch (in-room/working?)        </td></tr>
+        <tr class="work hspan2"><td>13:30</td><td>Working group hack              </td></tr>
+        <tr class="break"><td>15:00</td><td>Coffee                          </td></tr>
+        <tr class="work hspan2"><td>15:15</td><td>Working group hack              </td></tr>
+        <tr class="plenary"><td>17:30</td><td>Tag up: groups discuss progress </td></tr>
+        <tr class="break"><td>18:00</td><td>Dinner                          </td></tr>
+        </table>
+      </div>
+
+      <div class="agenda">
+        <h4>Wednesday (2018-03-07)</h4>
+        <table>
+        <tr class="break"><td>08:30</td><td>Breakfast                     </td></tr>
+        <tr class="work hspan3"><td>09:00</td><td>Prepare final presentations   </td></tr>
+        <tr class="break"><td>10:30</td><td>Coffee                        </td></tr>
+        <tr class="plenary hspan2"><td>11:00</td><td>Final presentations           </td></tr>
+        <tr class="plenary"><td>12:00</td><td>What's next?                  </td></tr>
+        <tr class="plenary"><td>12:30</td><td>Done.                         </td></tr>
+        </table>
+      </div>
 
       <a name="participants"><h2>Participants</h2></a>
       <h3>Organizers</h3>
-      <ul>
+      <ul class="names">
         <li>Will Dawson (LLNL)</li>
         <li>Alex Drlica-Wagner (FNAL)</li>
         <li>Yao-Yuan Mao (Pittsburgh)</li>
@@ -127,9 +211,10 @@
       </ul>
 
       <h3>Confirmed Participants</h3>
-      <ul>
+      <ul class="names">
         <li>Yacine Ali-Haimoud (NYU)</li>
         <li>Brian Batell (Pittsburgh)</li>
+        <li>Andrew Benson (Carnegie)</li>
         <li>Simeon Bird (Johns Hopkins)</li>
         <li>Michael Boylan-Kolchin (UT Austin)</li>
         <li>Jo Bovy (U Toronto)</li>
