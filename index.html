@@ -74,9 +74,19 @@
     margin-top: 6em;
   }
   .agenda, .names > li{
-    width: 33%;
-    min-width: 270px;
+    width: 32%;
+    margin: 0 auto;
     display: inline-block;
+  }
+  @media (max-width: 900px) {
+    .agenda, .names > li{
+       width: 48%;
+    }
+  }
+  @media (max-width: 600px) {
+    .agenda, .names > li{
+       width: 100%;
+    }
   }
   .agenda{
     overflow-x: auto;
