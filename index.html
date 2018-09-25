@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <title>Probing the Nature of Dark Matter with LSST | LLNL, October 29-31, 2018</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -7,147 +8,188 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <style>
-  html{
-    font-family: "Roboto", sans-serif;
-    line-height: 1.2;
-  }
-  body{
-    color: #333;
-    background-color: #EEE;
-  }
-  a:link, a:link:hover, a:visited, .footnote-ref{
-    color: #0CB0FF;
-  }
-  .page{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2em;
-  }
-  .header{
-    background-color: #333;
-    background-image: url('musketball_small.jpg');
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 22em;
-    width: 100%;
-    z-index: -1;
-  }
-  .header-content{
-    height: 22em;
-  }
-  .header-text{
-    color: #FFF;
-    display: table-cell;
-    height: 21em;
-    vertical-align: bottom;
-  }
-  .main-content{
-    background-color: #FFF;
-    padding-bottom: 20em;
-  }
-  .menu{
-    background-color: #FFF;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
-    position: sticky;
-    top: -1px;
-    z-index: 2;
-    margin-bottom: 0;
-  }
-  .content h2{
-    margin-top: 1.67em;
-  }
-  :target:before {
-    display: block;
-    content: "";
-    height: 1.67em;
-    margin-top: -1.67em;
-  }
-  .footer{
-    font-size: 80%;
-    margin-top: 6em;
-  }
-  .agenda, .names > li{
-    width: 32%;
-    margin: 0 auto;
-    display: inline-block;
-  }
-  @media (max-width: 900px) {
-    .agenda, .names > li{
-       width: 48%;
+    html {
+      font-family: "Roboto", sans-serif;
+      line-height: 1.2;
     }
-  }
-  @media (max-width: 600px) {
-    .agenda, .names > li{
-       width: 100%;
+
+    body {
+      color: #333;
+      background-color: #EEE;
     }
-  }
-  .agenda{
-    overflow-x: auto;
-    vertical-align: top;
-  }
-  .names {
-    padding: 0;
-  }
-  .agenda table, .agenda tr{
-    width: 100%;
-    border-spacing: 0px;
-  }
-  .agenda td{
-    height: 22px;
-    line-height: 22px;
-    padding: 5px 0.5em;
-    vertical-align: top;
-    white-space: nowrap;
-  }
-  .hspan2{
-    height: 64px;
-  }
-  .hspan3{
-    height: 96px;
-  }
-  .hspan4{
-    height: 128px;
-  }
-  .break{
-    background-color: #cfe2f3;
-  }
-  .plenary{
-    background-color: #fce5cd;
-  }
-  .work{
-    background-color: #d9ead3;
-  }
-  img{
-    width: 100%;
-  }
-  .pure-button{
-    display: inline-block;
-    zoom: 1;
-    white-space: nowrap;
-    vertical-align: middle;
-    text-align: center;
-    cursor: pointer;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.2);
-    background-color: #0078e7;
-    color: #fff !important;
-    font-size: 100%;
-    padding: .5em 1em;
-    text-decoration: none;
-    border-radius: 2px;
-  }
+
+    a:link,
+    a:link:hover,
+    a:visited,
+    .footnote-ref {
+      color: #0CB0FF;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2em;
+    }
+
+    .header {
+      background-color: #333;
+      background-image: url('musketball_small.jpg');
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 22em;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .header-content {
+      height: 22em;
+    }
+
+    .header-text {
+      color: #FFF;
+      display: table-cell;
+      height: 21em;
+      vertical-align: bottom;
+    }
+
+    .main-content {
+      background-color: #FFF;
+      padding-bottom: 20em;
+    }
+
+    .menu {
+      background-color: #FFF;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
+      position: sticky;
+      top: -1px;
+      z-index: 2;
+      margin-bottom: 0;
+    }
+
+    .content h2 {
+      margin-top: 1.67em;
+    }
+
+    :target:before {
+      display: block;
+      content: "";
+      height: 1.67em;
+      margin-top: -1.67em;
+    }
+
+    .footer {
+      font-size: 80%;
+      margin-top: 6em;
+    }
+
+    .hotel,
+    .agenda,
+    .names>li {
+      width: 32%;
+      margin: 0 auto;
+      display: inline-block;
+    }
+
+    .hotel {
+      width: 48%;
+    }
+
+    @media (max-width: 900px) {
+
+      .agenda,
+      .names>li {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .hotel,
+      .agenda,
+      .names>li {
+        width: 100%;
+      }
+    }
+
+    .agenda, .hotel {
+      overflow-x: auto;
+      vertical-align: top;
+    }
+
+    .names {
+      padding: 0;
+    }
+
+    .agenda table,
+    .agenda tr {
+      width: 100%;
+      border-spacing: 0px;
+    }
+
+    .agenda td {
+      height: 22px;
+      line-height: 22px;
+      padding: 5px 0.5em;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    .hspan2 {
+      height: 64px;
+    }
+
+    .hspan3 {
+      height: 96px;
+    }
+
+    .hspan4 {
+      height: 128px;
+    }
+
+    .break {
+      background-color: #cfe2f3;
+    }
+
+    .plenary {
+      background-color: #fce5cd;
+    }
+
+    .work {
+      background-color: #d9ead3;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .pure-button {
+      display: inline-block;
+      zoom: 1;
+      white-space: nowrap;
+      vertical-align: middle;
+      text-align: center;
+      cursor: pointer;
+      -webkit-user-drag: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.2);
+      background-color: #0078e7;
+      color: #fff !important;
+      font-size: 100%;
+      padding: .5em 1em;
+      text-decoration: none;
+      border-radius: 2px;
+    }
   </style>
 </head>
 
@@ -159,7 +201,8 @@
       <h1>Probing the Nature of Dark Matter with LSST</h1>
       <h3>October 29-31, Lawrence Livermore National Lab</h3>
       <p>A three-day workshop to make real steps towards assembling an LSST Dark Matter white paper.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBdfrIHd8E7x20T1FzmA1WDL3BcEYifzlp0L_MgzYKRqkjyg/viewform" class="pure-button">Register now!</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBdfrIHd8E7x20T1FzmA1WDL3BcEYifzlp0L_MgzYKRqkjyg/viewform"
+        class="pure-button">Register now!</a>
     </span>
   </div>
 
@@ -172,21 +215,38 @@
     </nav>
 
     <div class="content">
-      <a name="register"><h2>Registration</h2></a>
-      <p>Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBdfrIHd8E7x20T1FzmA1WDL3BcEYifzlp0L_MgzYKRqkjyg/viewform">fill out this form to register</a>.
-        Space is limited but we will do our best to accommodate everyone. We also plan to support remote access for collaborators who cannot attend in person. 
+      <a name="register">
+        <h2>Registration</h2>
+      </a>
+      <p>Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBdfrIHd8E7x20T1FzmA1WDL3BcEYifzlp0L_MgzYKRqkjyg/viewform">fill
+          out this form to register</a>.
+        Space is limited but we will do our best to accommodate everyone. We also plan to support remote access for
+        collaborators who cannot attend in person.
         <b>Registration Deadline: September 21st, 2018</b></p>
 
-      <a name="goal"><h2>Workshop Goal</h2></a>
-      <p>This is the second in a series of workshops attempting to answer the question: how can we utilize LSST to help us understand the microphysics of dark matter, to identify the fundamental constituents of dark matter (e.g., new fundamental particles, compact objects, etc.), and to characterize the properties of these constituents (e.g, mass, temperature, self-interaction rate, etc.)? LSST offers a unique avenue to attack the dark matter problem through "astrophysical probes".
-      Hence, the primary goal of this workshop is build on the work of the <a href="./PreviousWorkshops/pitt2018/index.html">U. Pittsburg 2018 workshop</a> towards an LSST dark matter white paper. In this white paper, we hope to provide a comprehensive summary of the various techniques that can be used to test the fundamental nature of dark matter with LSST.
+      <a name="goal">
+        <h2>Workshop Goal</h2>
+      </a>
+      <p>This is the second in a series of workshops attempting to answer the question: how can we utilize LSST to help
+        us understand the microphysics of dark matter, to identify the fundamental constituents of dark matter (e.g.,
+        new fundamental particles, compact objects, etc.), and to characterize the properties of these constituents
+        (e.g, mass, temperature, self-interaction rate, etc.)? LSST offers a unique avenue to attack the dark matter
+        problem through "astrophysical probes".
+        Hence, the primary goal of this workshop is build on the work of the <a href="./PreviousWorkshops/pitt2018/index.html">U.
+          Pittsburg 2018 workshop</a> towards an LSST dark matter white paper. In this white paper, we hope to provide
+        a comprehensive summary of the various techniques that can be used to test the fundamental nature of dark
+        matter with LSST.
       </p>
-      <p>Activity from the last workshop are summerized in a series of <a href="https://github.com/lsstdarkmatter/dark-matter-paper/issues">github issues</a> and tweets: <a href="https://twitter.com/hashtag/lsstdarkmatter">#lsstdarkmatter</a>.</p>
+      <p>Activity from the last workshop are summerized in a series of <a href="https://github.com/lsstdarkmatter/dark-matter-paper/issues">github
+          issues</a> and tweets: <a href="https://twitter.com/hashtag/lsstdarkmatter">#lsstdarkmatter</a>.</p>
 
-      <a name="graphic"><h2>Dark Matter Graphic</h2></a>
+      <a name="graphic">
+        <h2>Dark Matter Graphic</h2>
+      </a>
       <p>
         We have begun to assemble graphical representations of the complex LSST dark matter parameter space.
-        This graphic is intended to help conceptually organize the LSST dark matter program and serve as a road map for the dark matte white paper.
+        This graphic is intended to help conceptually organize the LSST dark matter program and serve as a road map for
+        the dark matte white paper.
         A landing page for the dark matter graphic can be found here:
       </p>
       <ul>
@@ -194,10 +254,11 @@
       </ul>
 
       <p>We strongly encourage the addition of new components through this
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkUCE7o8cqQQV9PFki484sSqRzelTDEk1SXtwb7I2d4gxxTw/viewform">submission form</a>.
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfkUCE7o8cqQQV9PFki484sSqRzelTDEk1SXtwb7I2d4gxxTw/viewform">submission
+          form</a>.
       </p>
 
-<!--  <a name="agenda"><h2>Agenda</h2></a>
+      <!--  <a name="agenda"><h2>Agenda</h2></a>
 
       <p>The agenda is color coded by session type: <span class="plenary">plenary sessions</span>, <span class="work">small group work sessions</span>, and <span class="break">food/breaks</span>.
       </p>
@@ -258,7 +319,9 @@
       </p>
       -->
 
-      <a name="participants"><h2>Participants</h2></a>
+      <a name="participants">
+        <h2>Participants</h2>
+      </a>
       <h3>Organizers</h3>
       <ul class="names">
         <li>Keith Bechtol (LSST)</li>
@@ -277,55 +340,69 @@
       </ul>
       -->
 
-      <p>If you wish to subscribe to our mailing list, please visit <a href="https://groups.google.com/d/forum/lsstdarkmatter">this link</a>,
-        or send your request to <a href="mailto:yymao.astro@gmail.com?subject=Subscribe to lsstdarkmatter Mailing List">Yao-Yuan Mao</a> directly.</p>
+      <p>If you wish to subscribe to our mailing list, please visit <a href="https://groups.google.com/d/forum/lsstdarkmatter">this
+          link</a>,
+        or send your request to <a href="mailto:yymao.astro@gmail.com?subject=Subscribe to lsstdarkmatter Mailing List">Yao-Yuan
+          Mao</a> directly.</p>
 
-      <a name="local"><h2>Local Info</h2></a>
-      <p> The workshop will take place at the High Peformance Computing Innovation Center (<a href="https://hpcinnovationcenter.llnl.gov">HPCIC</a>) on the Livermore Valley Open Campus (LVOC).</p>
+      <a name="local">
+        <h2>Local Info</h2>
+      </a>
+      <p> The workshop will take place at the High Peformance Computing Innovation Center (<a href="https://hpcinnovationcenter.llnl.gov">HPCIC</a>)
+        on the Livermore Valley Open Campus (LVOC).</p>
 
-      <p> Realizing the value of the Laboratory's strategic partnerships with private industries and academic institutions, the Department of Energy authorized Lawrence Livermore and Sandia national laboratories to develop a collaboration space outside the two laboratories’ fenced perimeters. In 2011, the Livermore Valley Open Campus (LVOC) was established with the opening of the HPCIC. The primary goal of the open campus is to act as an innovation hub for unclassified research and development activities. Since its inception, the HPCIC has received over 44,000 visitors and hosted more than 4,700 events. Looking ahead, the LVOC is growing rapidly: there are plans to expand the HPCIC facilities and a new Additive Manufacturing lab is currently under construction.</p>
+      <p> Realizing the value of the Laboratory's strategic partnerships with private industries and academic
+        institutions, the Department of Energy authorized Lawrence Livermore and Sandia national laboratories to
+        develop a collaboration space outside the two laboratories’ fenced perimeters. In 2011, the Livermore Valley
+        Open Campus (LVOC) was established with the opening of the HPCIC. The primary goal of the open campus is to act
+        as an innovation hub for unclassified research and development activities. Since its inception, the HPCIC has
+        received over 44,000 visitors and hosted more than 4,700 events. Looking ahead, the LVOC is growing rapidly:
+        there are plans to expand the HPCIC facilities and a new Additive Manufacturing lab is currently under
+        construction.</p>
 
       <p>Breakfast and lunch will be provided (lunch for the first two days only).</p>
 
-      <p>We have reserved 20 rooms at the Courtyard Marriot and 10 rooms at the Hilton Garden Inn. 
-        <h3>Hilton Garden Inn Livermore</h3>
-      <ul>
-      
-            <p>Group Name: LLNL - LSST WORKSHOP</p>
-            <p>Group Code: LSST</p>
-            <p>Check-in: 28-OCT-2018</p>
-            <p>Check-out: 31-OCT-2018</p>
-            <p>Address: 2801 Constitution Drive, Livermore, California 94550</p>
-            <p>Phone Number: 925-292-2013</p>
-        
-      </ul>
-      </p>
+      <p>We have reserved 20 rooms at the Courtyard Marriot and 10 rooms at the Hilton Garden Inn.</p>
 
-       <h3>Courtyard by Marriott Livermore</h3>
-      <ul>
-      
-            <p>Group Name: LLNL - LSST WORKSHOP</p>
-            <p>Group Code: LSST</p>
-            <p>Check-in: 28-OCT-2018</p>
-            <p>Check-out: 1-NOV-2018</p>
-            <p>Address: 2929 Constitution Drive, Livermore, California 94550</p>
-            <p>Phone Number: 925-243-1000</p>
-        <p>Group Rate: 171 USD per night</p> 
-        
-      </ul>
-      </p>
+      <div>
+        <div class="hotel">
+          <h4>Courtyard by Marriott Livermore</h4>
+          <ul>
+            <li>Group Name: LLNL - LSST WORKSHOP</li>
+            <li>Group Code: LSST</li>
+            <li>Check-in: 28-OCT-2018</li>
+            <li>Check-out: 1-NOV-2018</li>
+            <li>Address: 2929 Constitution Drive, Livermore, California 94550</li>
+            <li>Phone Number: 925-243-1000</li>
+            <li>Group Rate: 171 USD per night</li>
+          </ul>
+        </div>
+        <div class="hotel">
+          <h4>Hilton Garden Inn Livermore</h4>
+          <ul>
+            <li>Group Name: LLNL - LSST WORKSHOP</li>
+            <li>Group Code: LSST</li>
+            <li>Check-in: 28-OCT-2018</li>
+            <li>Check-out: 31-OCT-2018</li>
+            <li>Address: 2801 Constitution Drive, Livermore, California 94550</li>
+            <li>Phone Number: 925-292-2013</li>
+          </ul>
+        </div>
+      </div>
 
-      <a name="transportation"><h2>Transportation</h2></a>
+      <a name="transportation">
+        <h2>Transportation</h2>
+      </a>
       <h3>To and From Bay Area Airports</h3>
-        <p>LLNL is approximately an hour east of San Francisco (SFO), Oakland(OAK), and San Jose (SJC) airports.</p>
-        <ul>
-          <li>A rental car may be the most convenient option. Approximately $50/day.</li>
-          <li><a href="https://www.lyft.com/cities/san-francisco-ca">Lyft</a> and <a href="https://www.uber.com/cities/san-francisco/">Uber</a>:
+      <p>LLNL is approximately an hour east of San Francisco (SFO), Oakland(OAK), and San Jose (SJC) airports.</p>
+      <ul>
+        <li>A rental car may be the most convenient option. Approximately $50/day.</li>
+        <li><a href="https://www.lyft.com/cities/san-francisco-ca">Lyft</a> and <a href="https://www.uber.com/cities/san-francisco/">Uber</a>:
           Takes 55+ minutes, costs about $65. Both are also prevelant in Livermore.</li>
-          <li>Taxi: Takes 55+ minutes, costs about $120.</li>
-        </ul>
+        <li>Taxi: Takes 55+ minutes, costs about $120.</li>
+      </ul>
 
-<!--       <h3>Within Pittsburgh</h3>
+      <!--       <h3>Within Pittsburgh</h3>
       <p><a href="http://www.portauthority.org/paac/default.aspx">Port Authority buses</a> are your best option to travel within Pittsburgh.
         Fare is $2.75 per trip and must be paid with the exact change.
         If you are planning on using the bus system throughout the week you can purchase
@@ -338,50 +415,66 @@
         and <a href="http://www.pittsburghparking.com/">here (city parking)</a>.
  -->
 
-      <a name="previous"><h2>Previous Workshops</h2></a>
+      <a name="previous">
+        <h2>Previous Workshops</h2>
+      </a>
       <ul>
         <li>
-          <p><a href="./PreviousWorkshops/pitt2018/index.html">Probing the Nature of Dark Matter with LSST | University of Pittsburgh, March 5-7, 2018</a><p>
+          <p><a href="./PreviousWorkshops/pitt2018/index.html">Probing the Nature of Dark Matter with LSST | University
+              of Pittsburgh, March 5-7, 2018</a>
+            <p>
         </li>
         <li>
-          <p><a href="https://project.lsst.org/meetings/lsst2017/session/dark-matter-science-lsst">LSST Community and Project Workshop: Dark Matter Science with LSST | Tucson, AZ August 16, 2016</a></p>
+          <p><a href="https://project.lsst.org/meetings/lsst2017/session/dark-matter-science-lsst">LSST Community and
+              Project Workshop: Dark Matter Science with LSST | Tucson, AZ August 16, 2016</a></p>
         </li>
-     </ul>
+      </ul>
 
-      <a name="coc"><h2>Code of Conduct</h2></a>
+      <a name="coc">
+        <h2>Code of Conduct</h2>
+      </a>
       <p>The workshop organizers are committed to conducting a meeting that is productive
-        and enjoyable for everyone. We will not tolerate harassment of participants in any form throughout the workshop.</p>
+        and enjoyable for everyone. We will not tolerate harassment of participants in any form throughout the
+        workshop.</p>
       <p>By attending this workshop you agree to:</p>
       <ul>
         <li>
-          <p>Behave professionally. Harassment<sup class="footnote-ref">[1]</sup>, and exclusionary or offensive comments or jokes related
+          <p>Behave professionally. Harassment<sup class="footnote-ref">[1]</sup>, and exclusionary or offensive
+            comments or jokes related
             to personal attributes<sup class="footnote-ref">[2]</sup> are not appropriate.</p>
         </li>
         <li>
-          <p>Communicate appropriately. Aim for a professional audience including people of many different backgrounds. Sexual language
+          <p>Communicate appropriately. Aim for a professional audience including people of many different backgrounds.
+            Sexual language
             and imagery are not acceptable.</p>
         </li>
         <li>
           <p>Be kind and considerate. Do not insult or put down other meeting participants.</p>
         </li>
       </ul>
-      <p>All participants are empowered to request that undesirable behavior be stopped. Participants asked to stop any behavior inconsistent
+      <p>All participants are empowered to request that undesirable behavior be stopped. Participants asked to stop any
+        behavior inconsistent
         with this code of conduct are expected to comply immediately.</p>
-      <p>If a participant engages in behavior that violates this code of conduct, the workshop organizers may take any action they
+      <p>If a participant engages in behavior that violates this code of conduct, the workshop organizers may take any
+        action they
         deem appropriate, including warning the offender or expulsion from the workshop.</p>
       <hr class="footnotes-sep">
       <section class="footnotes">
         <ol class="footnotes-list">
           <li id="fn1" class="footnote-item">
             <p>
-              <em>Harassment</em> includes, but is not limited to, sustained disruption of talks or other events, unwelcome physical
-              contact, sexual attention or innuendo, intimidation, stalking, and recording of an individual without consent.
+              <em>Harassment</em> includes, but is not limited to, sustained disruption of talks or other events,
+              unwelcome physical
+              contact, sexual attention or innuendo, intimidation, stalking, and recording of an individual without
+              consent.
             </p>
           </li>
           <li id="fn2" class="footnote-item">
             <p>
-              <em>Personal attributes</em> include, but are not limited to, (alphabetically) age, disability, ethnicity, gender, gender
-              expression, gender identity, lactation, nationality, physical appearance, political affiliation, pregnancy, race,
+              <em>Personal attributes</em> include, but are not limited to, (alphabetically) age, disability,
+              ethnicity, gender, gender
+              expression, gender identity, lactation, nationality, physical appearance, political affiliation,
+              pregnancy, race,
               religion, sexual orientation, and status as a caregiver (including as a parent).
             </p>
           </li>
@@ -391,14 +484,25 @@
     </div>
     <div class="footer">
       <p>This code of conduct is derived from the
-          <a href="http://lsstdesc.org/sites/default/files/LSST_DESC_Professional_Conduct.pdf"
-            target="_blank">Meeting Code of Conduct of the LSST Dark Energy Science Collaboration</a> and the
-          <a href="https://us.pycon.org/2018/about/code-of-conduct/"
-            target="_blank">PyCon Code of Conduct</a>.</p>
-      <p>This composite image shows the distribution of hot x-ray emitting gas (pink) and dark matter (blue) overlaid on Hubble imaging of the "Musket Ball" galaxy cluster. Credit: X-ray: NASA/CXC/UCDavis/W.Dawson et al; Optical: NASA/STScI/UCDavis/W.Dawson et al.</p>
-      <p>This document was prepared as an account of work sponsored by an agency of the United States government. Neither the United States government nor Lawrence Livermore National Security, LLC, nor any of their employees makes any warranty, expressed or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States government or Lawrence Livermore National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States government or Lawrence Livermore National Security, LLC, and shall not be used for advertising or product endorsement purposes. Prepared by LLNL under Contract DE-AC52-07NA27344.</p>
+        <a href="http://lsstdesc.org/sites/default/files/LSST_DESC_Professional_Conduct.pdf" target="_blank">Meeting
+          Code of Conduct of the LSST Dark Energy Science Collaboration</a> and the
+        <a href="https://us.pycon.org/2018/about/code-of-conduct/" target="_blank">PyCon Code of Conduct</a>.</p>
+      <p>This composite image shows the distribution of hot x-ray emitting gas (pink) and dark matter (blue) overlaid
+        on Hubble imaging of the "Musket Ball" galaxy cluster. Credit: X-ray: NASA/CXC/UCDavis/W.Dawson et al; Optical:
+        NASA/STScI/UCDavis/W.Dawson et al.</p>
+      <p>This document was prepared as an account of work sponsored by an agency of the United States government.
+        Neither the United States government nor Lawrence Livermore National Security, LLC, nor any of their employees
+        makes any warranty, expressed or implied, or assumes any legal liability or responsibility for the accuracy,
+        completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that
+        its use would not infringe privately owned rights. Reference herein to any specific commercial product,
+        process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or
+        imply its endorsement, recommendation, or favoring by the United States government or Lawrence Livermore
+        National Security, LLC. The views and opinions of authors expressed herein do not necessarily state or reflect
+        those of the United States government or Lawrence Livermore National Security, LLC, and shall not be used for
+        advertising or product endorsement purposes. Prepared by LLNL under Contract DE-AC52-07NA27344.</p>
     </div>
   </div>
 
 </body>
+
 </html>
