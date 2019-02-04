@@ -9,7 +9,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <style>
     html {
       font-family: "Roboto", sans-serif;
@@ -23,8 +23,7 @@
 
     a:link,
     a:link:hover,
-    a:visited,
-    .footnote-ref {
+    a:visited, {
       color: #0CB0FF;
     }
 
@@ -92,81 +91,22 @@
       margin-top: 6em;
     }
 
-    .hotel,
-    .agenda,
-    .names>li {
-      width: 32%;
+    .white-paper-container{
+      width: 75%;
       margin: 0 auto;
+    }
+
+    .white-paper{
+      text-align: center;
       display: inline-block;
-    }
-
-    .hotel {
-      width: 48%;
-    }
-
-    @media (max-width: 900px) {
-
-      .agenda,
-      .names>li {
-        width: 48%;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .hotel,
-      .agenda,
-      .names>li {
-        width: 100%;
-      }
-    }
-
-    .agenda,
-    .hotel {
-      overflow-x: auto;
-      vertical-align: top;
-    }
-
-    .names {
-      padding: 0;
-    }
-
-    .agenda table,
-    .agenda tr {
+      padding-top: 24px;
       width: 100%;
-      border-spacing: 0px;
     }
 
-    .agenda td {
-      height: 22px;
-      line-height: 22px;
-      padding: 5px 0.5em;
-      vertical-align: top;
-      white-space: nowrap;
-    }
-
-    .hspan2 {
-      height: 64px;
-    }
-
-    .hspan3 {
-      height: 96px;
-    }
-
-    .hspan4 {
-      height: 128px;
-    }
-
-    .break {
-      background-color: #cfe2f3;
-    }
-
-    .plenary {
-      background-color: #fce5cd;
-    }
-
-    .work {
-      background-color: #d9ead3;
+    @media (min-width: 800px) {
+      .white-paper {
+        width: 49%;
+      }
     }
 
     img {
@@ -182,7 +122,7 @@
       cursor: pointer;
       -webkit-user-drag: none;
       -webkit-user-select: none;
-     -moz-user-select: none;
+      -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
       box-sizing: border-box;
@@ -190,10 +130,18 @@
       background-color: #0078e7;
       color: #fff !important;
       font-size: 100%;
-      padding: .5em 1em;
+      padding: .8em 1.5em;
       text-decoration: none;
       border-radius: 2px;
     }
+
+    .bg-green{
+      background-color:#5eb95e;
+    }
+    .bg-grey{
+      background-color: #AAA;
+    }
+
   </style>
 </head>
 
@@ -211,16 +159,20 @@
     <nav class="menu">
       <a href="#goal">Objectives</a> |
       <a href="#products">Products</a> |
-      <a href="#workshops">Workshops</a> | 
+      <a href="#workshops">Workshops</a> |
       <a href="#participate">Participation</a> |
       <a href="#code">Conduct</a>
     </nav>
 
     <div class="content">
-      <br>
-      <p align="center" style="font-weight:bold; font-style:italic">The latest version of the full LSST Dark Matter white paper is available <a href="white-paper.html">here</a>.</p>
-      <p align="center" style="font-weight:bold; font-style:italic">A shortened version of the white paper for Astro2020 will be available <a href="astro2020.html">here</a>.</p>
-
+      <div class="white-paper-container">
+        <div class="white-paper">
+           <a class="pure-button bg-green" href="white-paper.html">LSST Dark Matter White Paper</a>
+        </div>
+        <div class="white-paper">
+          <a class="pure-button bg-grey" href="astro2020.html">Astro2020 White Paper (coming soon)</a>
+        </div>
+      </div>
       <a name="goal">
         <h2>Objectives</h2>
       </a>
@@ -238,16 +190,16 @@
       </a>
       <ul>
         <li> <p> <b>Dark Matter White Paper</b> --
-            One of the major efforts of the LSST dark matter group has been the preparation of a white paper detailing the fundamental probes of dark matter accessible to LSST. 
+            One of the major efforts of the LSST dark matter group has been the preparation of a white paper detailing the fundamental probes of dark matter accessible to LSST.
             The latest version of the white paper can be found <a href="white-paper.html">here</a>.
           </p>
         </li>
         <li> <p> <b>Astro2020 White Paper</b> --
-            We plan to prepare a 5-page version of the white paper for submission to Astro2020. 
-            A draft of this paper will be available <a href="astro2020.html">here</a>.
+            We plan to prepare a 5-page version of the white paper for submission to Astro2020.
+            A draft of this paper will soon be available <a href="astro2020.html">here</a>.
           </p>
         </li>
-        <li> <p> <b>Dark Matter Graphics</b> -- 
+        <li> <p> <b>Dark Matter Graphics</b> --
             The landscape of astrophysical probes is complex and interconnected. We have assembled
             <a href="https://lsstdarkmatter.github.io/dark-matter-graph">graphical representations</a> of the LSST dark matter parameter space.
             This graphic is intended to help conceptually organize the LSST dark matter program and to serve as a road map for future scientific investigations.
@@ -262,27 +214,27 @@
       </a>
 
       <p>The group has organized several workshops, which have been partially funded by a grant from the LSST Corporation Enabling Science Program.
-        These workshops seek to organize the LSST dark matter community, and to coordinate efforts on the construction of a white paper on dark matter physics with LSST. 
+        These workshops seek to organize the LSST dark matter community, and to coordinate efforts on the construction of a white paper on dark matter physics with LSST.
         Activity from previous workshop are summarized in a series of
-        <a href="https://github.com/lsstdarkmatter/dark-matter-paper/issues">GitHub issues</a> and tweets to 
+        <a href="https://github.com/lsstdarkmatter/dark-matter-paper/issues">GitHub issues</a> and tweets to
         <a href="https://twitter.com/hashtag/lsstdarkmatter">#lsstdarkmatter</a>.
       </p>
 
       <ul>
-        <li>Probing the Nature of Dark Matter with LSST -- 
+        <li>Probing the Nature of Dark Matter with LSST --
           Kavli Institute of Cosmological Physics, Summer 2019
         </li>
         <li><a href="./workshops/llnl2018/index.html">
-            Probing the Nature of Dark Matter with LSST</a> -- 
+            Probing the Nature of Dark Matter with LSST</a> --
           Lawrence Livermore National Laboratory, October 29-31, 2018
         </li>
-        <li><a href="https://project.lsst.org/meetings/lsst2018/content/astrophysical-probes-dark-matter-lsst">Astrophysical Probes of Dark Matter with LSST</a> -- 
+        <li><a href="https://project.lsst.org/meetings/lsst2018/content/astrophysical-probes-dark-matter-lsst">Astrophysical Probes of Dark Matter with LSST</a> --
           LSST Project and Community Workshop, Tucson, AZ August 16, 2018
         </li>
-        <li><a href="./workshops/pitt2018/index.html">Probing the Nature of Dark Matter with LSST</a> -- 
+        <li><a href="./workshops/pitt2018/index.html">Probing the Nature of Dark Matter with LSST</a> --
           University of Pittsburgh,  March 5-7, 2018
         </li>
-        <li><a href="https://project.lsst.org/meetings/lsst2017/session/dark-matter-science-lsst">Dark Matter Science with LSST</a> -- 
+        <li><a href="https://project.lsst.org/meetings/lsst2017/session/dark-matter-science-lsst">Dark Matter Science with LSST</a> --
           LSST Project and Community Workshop, Tucson, AZ August 16, 2017
         </li>
       </ul>
@@ -345,7 +297,7 @@
         </li>
       </ol>
 
-      <p>This background composite image shows the distribution of hot x-ray emitting gas (pink) and dark matter (blue) overlaid on Hubble imaging of the "Musket Ball" galaxy cluster. 
+      <p>This background composite image shows the distribution of hot x-ray emitting gas (pink) and dark matter (blue) overlaid on Hubble imaging of the "Musket Ball" galaxy cluster.
         Credit: X-ray: NASA/CXC/UCDavis/W.Dawson et al; Optical: NASA/STScI/UCDavis/W.Dawson et al.</p>
       <p>This page is developed and maintained on <a href="https://github.com/lsstdarkmatter/lsstdarkmatter.github.io">github</a>.</p>
     </div>
